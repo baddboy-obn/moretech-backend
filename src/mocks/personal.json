@@ -1,10 +1,11 @@
 {
-    "proffesional": {
+    "professional": {
         "name": "Константин",
         "lastname": "Ефимов",
         "department": "IT",
         "mentor": "Максим Башкардинов",
-        "manager": "Ирина Хон"
+        "manager": "Ирина Хон",
+        "position": "programmer"
     },
     "personal": {
         "id": 1,
@@ -109,7 +110,7 @@
         ],
         "count": 2
     },
-    "achivment": {
+    "achievement": {
         "items": [
             {
                 "name": "",
