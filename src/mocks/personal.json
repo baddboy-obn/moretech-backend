@@ -1,0 +1,130 @@
+{
+    "proffesional": {
+        "name": "Константин",
+        "lastname": "Ефимов",
+        "department": "IT",
+        "mentor": "Максим Башкардинов",
+        "manager": "Ирина Хон"
+    },
+    "personal": {
+        "id": 1,
+        "birthdate": "20.02.1983",
+        "about": "Милиардер, плейбой, флинантроп",
+        "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+    },
+    "finance": {
+        "coins": 200,
+        "targetPercent": 50
+    },
+    "friends": {
+        "items": [
+            {
+                "id": 1,
+                "birthdate": "20.02.1983",
+                "about": "Милиардер, плейбой, флинантроп",
+                "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+            },
+            {
+                "id": 1,
+                "birthdate": "20.02.1983",
+                "about": "Милиардер, плейбой, флинантроп",
+                "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+            },
+            {
+                "id": 1,
+                "birthdate": "20.02.1983",
+                "about": "Милиардер, плейбой, флинантроп",
+                "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+            }
+        ],
+        "count": 3
+    },
+    "votes": {
+        "items": [
+            {
+                "id": 1,
+                "birthdate": "20.02.1983",
+                "about": "Милиардер, плейбой, флинантроп",
+                "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+            },
+            {
+                "id": 1,
+                "birthdate": "20.02.1983",
+                "about": "Милиардер, плейбой, флинантроп",
+                "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+            }
+        ],
+        "count": 2
+    },
+    "guilds": {
+        "items":[
+            {
+                "name": "Гильдия GO",
+                "description": "Профессионое сообщество",
+                "alert": {
+                    "isAlert": true,
+                    "count": 5
+                }
+            },
+            {
+                "name": "Волшебная лига",
+                "description": "Спортивный клуб",
+                "alert": {
+                    "isAlert": false,
+                    "count": 5
+                }
+            },
+            {
+                "name": "Творим добро",
+                "description": "Волонтерское движение",
+                "alert": {
+                    "isAlert": false,
+                    "count": 5
+                }
+            }
+        ]
+    },
+    "activity": {
+        "items": [
+            {
+                "name": "Скоро день рождения",
+                "type": "internal",
+                "status": "чучаствую/не участвую/создал/завершено"
+            },
+            {
+                "name": "Помощь приюта для собак",
+                "type": "socium",
+                "status": "чучаствую/не участвую/создал/завершено"
+            },
+            {
+                "name": "Тайный санта",
+                "type": "internal",
+                "status": "чучаствую/не участвую/создал/завершено"
+            },
+            {
+                "name": "Менторство",
+                "type": "pro",
+                "status": "чучаствую/не участвую/создал/завершено"
+            }
+        ],
+        "count": 2
+    },
+    "achivment": {
+        "items": [
+            {
+                "name": "",
+                "description": "",
+                "image": "",
+                "takeDate": "",
+                "coins": 5
+            },
+            {
+                "name": "",
+                "description": "",
+                "image": "",
+                "takeDate": "",
+                "coins": 5
+            }
+        ]
+    }
+}
