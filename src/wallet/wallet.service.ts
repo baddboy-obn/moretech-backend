@@ -38,7 +38,7 @@ export class TransferDto {
   from: string;
   to: string;
   type: TypeCoin;
-  amount: number | string;
+  amount: number;
 }
 
 @Injectable()
@@ -107,20 +107,28 @@ export class WalletService {
    * @param type (enum RUBLE|MATIC)
    * @param amount (float of coin)
    */
-  async transactionFromTo(from: string, to: string, type: TypeCoin, amount: number | string): Promise<any> {
+  async transactionFromTo(from: string, to: string, type: TypeCoin, amount: number): Promise<any> {
     const fromWallet = Object.keys(this.wallets).filter(row => this.wallets[row].publicKey === from)
     let obj = {}
-    if (type === TypeCoin.NFT) {
-      Object.assign({tokenId: amount})
+    if (String(type) == "nft") {
+      Object.assign(obj, {tokenId: amount})
     }else{
-      Object.assign({amount})
+      Object.assign(obj, {amount})
     }
-    const data = await this.httpService.axiosRef.post(`https://hackathon.lsp.team/hk/v1/transfers/${type}`,
-      {
-        fromPrivateKey: this.wallets[fromWallet[0]].privateKey , toPublicKey: to, ...obj
-      }
-    )
-    return data["data"];
+
+    const body = {
+      fromPrivateKey: this.wallets[fromWallet[0]].privateKey , toPublicKey: to, ...obj
+    }
+
+    try {
+      const data = await this.httpService.axiosRef.post(`https://hackathon.lsp.team/hk/v1/transfers/${type}`,
+        body
+      )
+      return data.data.data;
+    }
+    catch (e) {
+      return e.response.data
+    }
   }
 
   /**
