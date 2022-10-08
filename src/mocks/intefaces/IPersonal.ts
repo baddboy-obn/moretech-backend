@@ -7,7 +7,7 @@ export interface IPersonalItem {
 
 interface IAlert {
   "isAlert": boolean;
-  "count": boolean;
+  "count": number;
 }
 
 export interface IGuildsItem {
@@ -27,7 +27,7 @@ enum ActivityItemStatus {
 export interface IActivityItem {
   "name": string
   "type": string
-  "status": ActivityItemStatus
+  "status": ActivityItemStatus | string
 }
 
 export interface IAchievement {

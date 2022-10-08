@@ -1,0 +1,17 @@
+{
+  "publicKey": "0x878046A8B0d27a7aB38A740129f5745c19f1f78C",
+  "professional": {
+    "name": "Ира",
+    "lastname": "Хон",
+    "department": "IT",
+    "mentor": "Максим Башкардинов",
+    "manager": "Вася пупкин",
+    "position": "manager"
+  },
+  "personal": {
+    "id": 1,
+    "birthdate": "20.02.1983",
+    "about": "Милиардер, плейбой, флинантроп",
+    "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+  }
+}

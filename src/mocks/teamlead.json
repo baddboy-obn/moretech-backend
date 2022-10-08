@@ -1,0 +1,17 @@
+{
+  "publicKey": "0x85D77033760b56BDa9DBDBde26f1975ae1cCa3A5",
+  "professional": {
+    "name": "Максим",
+    "lastname": "Башкардинов",
+    "department": "IT",
+    "mentor": "Василий Теркин",
+    "manager": "Вася Пупнки",
+    "position": "teamlead"
+  },
+  "personal": {
+    "id": 1,
+    "birthdate": "20.02.1983",
+    "about": "Милиардер, плейбой, флинантроп",
+    "avatar": "https://rest-zone.ru/upload/photos/2021/05/8Uu8sYR5dIQwPOSdPbvK_12_ffa126fc14b13cbf301d86cff093984a_avatar_full.jpg"
+  }
+}
