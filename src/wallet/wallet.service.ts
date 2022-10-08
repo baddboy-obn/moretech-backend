@@ -109,9 +109,15 @@ export class WalletService {
    */
   async transactionFromTo(from: string, to: string, type: TypeCoin, amount: number | string): Promise<any> {
     const fromWallet = Object.keys(this.wallets).filter(row => this.wallets[row].publicKey === from)
+    let obj = {}
+    if (type === TypeCoin.NFT) {
+      Object.assign({tokenId: amount})
+    }else{
+      Object.assign({amount})
+    }
     const data = await this.httpService.axiosRef.post(`https://hackathon.lsp.team/hk/v1/transfers/${type}`,
       {
-        fromPrivateKey: this.wallets[fromWallet[0]].privateKey , toPublicKey: to, amount
+        fromPrivateKey: this.wallets[fromWallet[0]].privateKey , toPublicKey: to, ...obj
       }
     )
     return data["data"];
